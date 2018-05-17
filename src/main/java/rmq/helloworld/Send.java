@@ -1,4 +1,5 @@
-package rmq.helloworld; /**
+//package rmq.helloworld;
+/**
  * Created by zuzhaoyue on 18/5/15.
  */
 import com.rabbitmq.client.ConnectionFactory;

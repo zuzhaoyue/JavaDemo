@@ -1,5 +1,7 @@
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by zuzhaoyue on 18/5/8.
@@ -14,7 +16,7 @@ public class LoopStr {
         l.add("a");
         boolean result = l.contains(null);
         System.out.println("reslut:" + result);
-        /*String str="123454545456789";
+        String str="123454545456789";
         Map<String ,Integer> map=new HashMap<String ,Integer>();
 
         for(int i=0;i<str.length()-3;i++)//处理的字符串向后移动
@@ -47,6 +49,6 @@ public class LoopStr {
             System.out.print(key+":"+map.get(key)+"\t");
             if(j%5==0)
                 System.out.println();
-        }*/
+        }
     }
 }

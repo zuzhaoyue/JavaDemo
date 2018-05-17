@@ -36,9 +36,6 @@ public class Recv {
         String  result = channel.basicConsume(QUEUE_NAME, true, consumer);
         System.out.println("result:" + result);
 
-        //最后,我们关系连接和队列
-        channel.close();
-        connection.close();
 
     }
 }
