@@ -10,7 +10,21 @@ public class LoopStr {
     public static void test(String ...a){
         System.out.println("========" + a);
     }
-    public static void main(String[] args){
+    private static String joinStrings(String[] strings, String delimiter, int startIndex) {
+        int length = strings.length;
+        if (length == 0 ) return "";
+        if (length < startIndex ) return "";
+        StringBuilder words = new StringBuilder(strings[startIndex]);
+        for (int i = startIndex + 1; i < length; i++) {
+            words.append(delimiter).append(strings[i]);
+        }
+        return words.toString();
+    }
+    public static void main(String args[]){
+        String a = joinStrings(args," ",1);
+        System.out.println("结果:" + a);
+    }
+    /*public static void main(String[] args){
 //        test();
         List l = new ArrayList<String>();
         l.add("a");
@@ -50,5 +64,5 @@ public class LoopStr {
             if(j%5==0)
                 System.out.println();
         }
-    }
+    }*/
 }
