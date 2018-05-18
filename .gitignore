@@ -16,4 +16,5 @@ data/
 *.swp
 *.properties
 *.log
+*.class
 
